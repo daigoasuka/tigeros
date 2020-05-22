@@ -1,5 +1,5 @@
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'tigerOS'
 pr: none
 trigger:
   branches:
@@ -19,5 +19,5 @@ steps:
   - task: PublishBuildArtifacts@1
     displayName: Upload da imagem de instalação para o Artifacts
     inputs:
-      pathtoPublish: /home/vsts/ubuntu-custom/iso/
-      artifactName: 'Ubuntu Custom ISO'
+      pathtoPublish: /home/vsts/tigerOS/iso/
+      artifactName: 'tigerOS'
